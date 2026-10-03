@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Canva icon">
+  <defs>
+    <linearGradient id="canva-a" x1="14" y1="12" x2="66" y2="68" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00d4ff"/>
+      <stop offset=".45" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#fb3aa9"/>
+    </linearGradient>
+  </defs>
+  <rect width="80" height="80" rx="18" fill="#08111f"/>
+  <rect x="14" y="14" width="52" height="52" rx="16" fill="url(#canva-a)"/>
+  <path d="M53 49.5c-3.5 5.1-8.4 7.5-14.3 7.5-8.8 0-15.2-6.5-15.2-15.6 0-10.4 7.9-19.2 18.2-19.2 5.3 0 9.6 2.2 12.2 6.1l-5.1 4.7c-1.9-2.6-4.3-3.9-7.3-3.9-5.8 0-10.4 5.4-10.4 12 0 5.3 3.4 8.9 8.4 8.9 3.5 0 6.4-1.6 8.8-4.9l4.7 4.4Z" fill="#fff"/>
+</svg>

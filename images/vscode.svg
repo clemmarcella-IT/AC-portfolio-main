@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="VS Code icon">
+  <defs>
+    <linearGradient id="code-a" x1="18" y1="12" x2="62" y2="68" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#0f56d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="80" height="80" rx="18" fill="#08111f"/>
+  <path d="M21 30 33 40 21 50l-6-5.2L25 40 15 35.2 21 30Z" fill="#67e8f9"/>
+  <path d="M34 40 58 18l8 4v36l-8 4L34 40Z" fill="url(#code-a)"/>
+  <path d="M58 29 45 40l13 11V29Z" fill="#0b3f9e" opacity=".8"/>
+  <path d="M58 18v44l8-4V22l-8-4Z" fill="#1d4ed8"/>
+</svg>

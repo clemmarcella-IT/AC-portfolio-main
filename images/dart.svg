@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Dart icon">
+  <defs>
+    <linearGradient id="dart-a" x1="14" y1="12" x2="66" y2="68" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#27d9ff"/>
+      <stop offset="1" stop-color="#1464f6"/>
+    </linearGradient>
+    <linearGradient id="dart-b" x1="18" y1="60" x2="66" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00b7ef"/>
+      <stop offset="1" stop-color="#0f4ecb"/>
+    </linearGradient>
+  </defs>
+  <rect width="80" height="80" rx="18" fill="#08111f"/>
+  <path d="M18 47 43 18h18l-31 44-12-15Z" fill="url(#dart-a)"/>
+  <path d="M30 62h31V18L43 18 18 47l12 15Z" fill="url(#dart-b)" opacity=".92"/>
+  <path d="M42 18h19v19L42 18Z" fill="#6ee7ff" opacity=".7"/>
+  <path d="M30 62h31L43 44 30 62Z" fill="#0b4ecf" opacity=".75"/>
+</svg>

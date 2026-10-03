@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Figma icon">
+  <rect width="80" height="80" rx="18" fill="#08111f"/>
+  <circle cx="32" cy="24" r="10" fill="#f24e1e"/>
+  <circle cx="48" cy="24" r="10" fill="#ff7262"/>
+  <circle cx="32" cy="40" r="10" fill="#a259ff"/>
+  <circle cx="48" cy="40" r="10" fill="#1abcfe"/>
+  <circle cx="32" cy="56" r="10" fill="#0acf83"/>
+  <path d="M32 34h16v12H32V34Z" fill="#ffffff" opacity=".08"/>
+</svg>

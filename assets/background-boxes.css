@@ -1,0 +1,69 @@
+body.background-boxes-fallback::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 8%, rgba(9, 9, 11, 0.5) 68%, #09090b 110%);
+}
+
+.background-boxes-fallback-grid,
+.background-boxes {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: #09090b;
+}
+
+.background-boxes-grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  grid-auto-rows: 48px;
+  transform: translate(-50%, -50%) perspective(1200px) rotateX(52deg) rotateZ(-8deg) scale(1.25);
+  transform-style: preserve-3d;
+}
+
+.background-boxes-fallback-grid {
+  display: grid;
+  inset: auto;
+  top: 50%;
+  left: 50%;
+  grid-auto-rows: 48px;
+  transform: translate(-50%, -50%) perspective(1200px) rotateX(52deg) rotateZ(-8deg) scale(1.25);
+  transform-style: preserve-3d;
+}
+
+.background-box-cell,
+.background-boxes-fallback-grid > div {
+  min-width: 0;
+  border-right: 1px solid rgba(113, 113, 122, 0.2);
+  border-bottom: 1px solid rgba(113, 113, 122, 0.18);
+  background: transparent;
+  transition: background-color 180ms ease, box-shadow 180ms ease;
+}
+
+.background-box-cell.is-active,
+.background-boxes-fallback-grid > div.is-active {
+  background: var(--box-color);
+  box-shadow: inset 0 0 22px var(--box-color), 0 0 28px var(--box-color);
+}
+
+.background-boxes-mask {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(9, 9, 11, 0.12) 8%, rgba(9, 9, 11, 0.48) 68%, #09090b 110%);
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+#root > div:first-child {
+  background-color: transparent !important;
+}

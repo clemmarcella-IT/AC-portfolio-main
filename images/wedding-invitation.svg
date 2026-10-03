@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Wedding Invitation Website Project Thumbnail</title>
+  <desc id="desc">A laptop and phone showing an elegant digital wedding invitation website.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061526"/>
+      <stop offset="0.58" stop-color="#0a2540"/>
+      <stop offset="1" stop-color="#02101d"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff9ef"/>
+      <stop offset="1" stop-color="#f4ead9"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16c7c7"/>
+      <stop offset="1" stop-color="#088f9d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#000814" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="dotGrid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#35d6ff" opacity="0.18"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect width="1200" height="800" fill="url(#dotGrid)" opacity="0.72"/>
+  <path d="M-60 650 C210 520 340 780 590 616 C790 486 884 540 1260 338" fill="none" stroke="#00d4ff" stroke-width="4" opacity="0.25"/>
+  <path d="M-30 704 C240 574 408 778 626 632 C820 502 952 534 1224 456" fill="none" stroke="#0ff0d8" stroke-width="2" opacity="0.22"/>
+  <circle cx="1000" cy="164" r="150" fill="#0bd9ff" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="168" cy="612" r="122" fill="#1dffb2" opacity="0.07" filter="url(#glow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="340" y="150" width="620" height="420" rx="30" fill="#0d1421"/>
+    <rect x="366" y="178" width="568" height="346" rx="16" fill="url(#screen)"/>
+    <rect x="296" y="566" width="708" height="42" rx="10" fill="#111827"/>
+    <path d="M480 608 H820 L866 652 H434 Z" fill="#0a0f18"/>
+  </g>
+
+  <g>
+    <rect x="398" y="214" width="498" height="278" rx="18" fill="#fffdf8" stroke="#d8c8a6" stroke-width="2"/>
+    <path d="M398 214 H896 V292 H398 Z" fill="#fff7e8"/>
+    <text x="647" y="283" text-anchor="middle" font-family="Georgia, serif" font-size="52" fill="#202635" font-style="italic">You're Invited</text>
+    <text x="647" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#677280" letter-spacing="4">WEDDING INVITATION</text>
+    <text x="647" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="#172033" font-weight="700">Wedding Website</text>
+    <rect x="562" y="430" width="170" height="42" rx="21" fill="url(#teal)"/>
+    <text x="647" y="457" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#ffffff" font-weight="700" letter-spacing="1">VIEW DETAILS</text>
+
+    <path d="M438 258 C476 238 502 224 530 194" fill="none" stroke="#6f927c" stroke-width="6" stroke-linecap="round"/>
+    <ellipse cx="456" cy="248" rx="13" ry="28" fill="#7fa68c" transform="rotate(-48 456 248)"/>
+    <ellipse cx="490" cy="226" rx="12" ry="25" fill="#b9c9a5" transform="rotate(-36 490 226)"/>
+    <circle cx="422" cy="282" r="18" fill="#f2d6c9"/>
+    <circle cx="448" cy="278" r="14" fill="#fff4e4"/>
+
+    <path d="M856 442 C816 458 790 476 760 508" fill="none" stroke="#6f927c" stroke-width="6" stroke-linecap="round"/>
+    <ellipse cx="832" cy="452" rx="12" ry="27" fill="#86ac92" transform="rotate(132 832 452)"/>
+    <ellipse cx="800" cy="478" rx="11" ry="24" fill="#b9c9a5" transform="rotate(140 800 478)"/>
+    <circle cx="874" cy="424" r="17" fill="#f2d6c9"/>
+    <circle cx="848" cy="428" r="14" fill="#fff4e4"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="182" y="238" width="190" height="338" rx="36" fill="#0e1420"/>
+    <rect x="198" y="268" width="158" height="276" rx="18" fill="url(#screen)"/>
+    <rect x="247" y="252" width="62" height="8" rx="4" fill="#263447"/>
+    <text x="277" y="334" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#202635" font-style="italic">You're</text>
+    <text x="277" y="368" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#202635" font-style="italic">Invited</text>
+    <text x="277" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#172033" font-weight="700">Wedding</text>
+    <text x="277" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#172033" font-weight="700">Website</text>
+    <rect x="224" y="486" width="106" height="36" rx="18" fill="url(#teal)"/>
+    <text x="277" y="509" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ffffff" font-weight="700">OPEN</text>
+    <path d="M220 304 C242 288 256 274 270 252" fill="none" stroke="#7fa68c" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="234" cy="294" rx="8" ry="16" fill="#88ad94" transform="rotate(-46 234 294)"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <circle cx="855" cy="626" r="80" fill="#12b76a"/>
+    <circle cx="855" cy="626" r="64" fill="#23ce7b"/>
+    <path d="M816 626 L843 654 L900 593" fill="none" stroke="#ffffff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g>
+    <rect x="80" y="86" width="260" height="64" rx="18" fill="rgba(0,212,255,0.16)" stroke="#00d4ff" stroke-width="2"/>
+    <text x="210" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#ffffff" font-weight="800">Wedding Invitation</text>
+  </g>
+</svg>

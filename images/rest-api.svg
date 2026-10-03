@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="REST API icon">
+  <defs>
+    <linearGradient id="api-a" x1="16" y1="14" x2="66" y2="66" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="80" height="80" rx="18" fill="#08111f"/>
+  <path d="M22 34a20 20 0 0 1 34-12" fill="none" stroke="#22d3ee" stroke-width="6" stroke-linecap="round"/>
+  <path d="M58 24h-13l7-10 6 10Z" fill="#22d3ee"/>
+  <path d="M58 46a20 20 0 0 1-34 12" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M22 56h13l-7 10-6-10Z" fill="#f59e0b"/>
+  <rect x="20" y="31" width="40" height="22" rx="6" fill="#dff8ff" opacity=".95"/>
+  <text x="40" y="46" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="800" fill="#0f2740">API</text>
+</svg>

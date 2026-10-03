@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Sensors and Automation icon">
+  <defs>
+    <linearGradient id="sensor-a" x1="16" y1="12" x2="62" y2="68" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="80" height="80" rx="18" fill="#08111f"/>
+  <circle cx="27" cy="51" r="8" fill="#f97316"/>
+  <circle cx="48" cy="31" r="7" fill="#0ea5e9"/>
+  <path d="M31 46 44 34" stroke="url(#sensor-a)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M52 34 60 42" stroke="#94a3b8" stroke-width="7" stroke-linecap="round"/>
+  <path d="M60 42h8" stroke="#94a3b8" stroke-width="7" stroke-linecap="round"/>
+  <rect x="16" y="58" width="34" height="7" rx="3.5" fill="#334155"/>
+  <path d="M15 28c5.1-5.1 13.4-5.1 18.5 0" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M20 34c2.4-2.4 6.3-2.4 8.7 0" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="24.4" cy="40" r="2.8" fill="#38bdf8"/>
+  <path d="M54 17h8v8" fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+  <path d="M62 17 51 28" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+</svg>

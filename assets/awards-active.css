@@ -1,0 +1,81 @@
+#achievements > div > .grid {
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr) !important;
+  align-items: center;
+  max-width: 1120px;
+  margin-inline: auto;
+}
+
+#achievements > div > .grid > div:last-child {
+  display: none !important;
+}
+
+#achievements figure {
+  width: min(100%, 460px);
+  margin-inline: auto;
+}
+
+#achievements figure > div:first-child {
+  height: 460px !important;
+}
+
+#achievements figure > figcaption {
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: calc(100% + 32px);
+  z-index: 20;
+  width: min(420px, 39vw);
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  border-left: 3px solid #34d399;
+  background: none;
+  transform: translateY(-50%);
+}
+
+#achievements figure > figcaption p:first-child {
+  font-size: 0.75rem;
+}
+
+#achievements figure > figcaption p:nth-child(2) {
+  margin-top: 0.65rem;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+#achievements figure > figcaption p:nth-child(3) {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  #achievements > div > .grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    max-width: 620px;
+  }
+
+  #achievements figure > figcaption {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    padding: 1rem 1rem 1.25rem;
+    border-top: 1px solid rgba(52, 211, 153, 0.35);
+    border-left: 0;
+    background: linear-gradient(to bottom, rgba(9, 9, 11, 0.96), rgba(9, 9, 11, 0.84));
+    transform: none;
+  }
+
+  #achievements figure > div:first-child {
+    height: 340px !important;
+  }
+
+  #achievements figure > figcaption p:nth-child(2) {
+    font-size: 1.05rem;
+  }
+
+  #achievements figure > figcaption p:nth-child(3) {
+    font-size: 0.82rem;
+  }
+}

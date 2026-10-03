@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="SQLite icon">
+  <defs>
+    <linearGradient id="sqlite-a" x1="18" y1="13" x2="51" y2="65" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#0f5fb8"/>
+    </linearGradient>
+  </defs>
+  <rect width="80" height="80" rx="18" fill="#08111f"/>
+  <ellipse cx="34" cy="21" rx="18" ry="8" fill="#7dd3fc"/>
+  <path d="M16 21v33c0 4.4 8.1 8 18 8s18-3.6 18-8V21c0 4.4-8.1 8-18 8s-18-3.6-18-8Z" fill="url(#sqlite-a)"/>
+  <ellipse cx="34" cy="54" rx="18" ry="8" fill="#164f99" opacity=".75"/>
+  <path d="M52 17c-5.5 12-5.5 24.5-17.4 39.5 10.3-4.4 18.4-12.4 24.1-24.2l6.2 2.6c-2.2-8-6.6-13.9-12.9-17.9Z" fill="#dff8ff"/>
+  <path d="M52.3 18.5c-2.3 9.3-5.8 18-13.8 29.5 6.8-5 12-11.2 15.7-18.8l5.8 2.4c-1.5-5.1-4.1-9.4-7.7-13.1Z" fill="#38bdf8"/>
+</svg>
