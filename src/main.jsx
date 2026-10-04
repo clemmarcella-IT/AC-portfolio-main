@@ -241,7 +241,7 @@ const teamMembers = [
     description: 'Junior Developer specializing in responsive interfaces with React/Vite, Bootstrap, and JavaScript. Focuses on component-based UI, UI/UX implementation, API integration, state management, and cross-browser experiences.',
   },
   {
-    name: 'Madel',
+    name: 'Madel YeshaAgo',
     role: 'Quality Assurance',
     image: './images/madel.png',
     description: 'Junior Developer supporting frontend development, responsive web design, UI implementation, feature testing, documentation, clean interfaces, and collaborative software development with detail-oriented execution.',

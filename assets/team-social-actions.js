@@ -26,24 +26,49 @@
     actions.dataset.memberName = memberName;
     actions.setAttribute('aria-label', `Links for ${memberName}`);
 
+    const memberLinks = {
+      'Madel YeshaAgo': {
+        github: null,
+        linkedin: 'https://www.linkedin.com/in/madel-yesha-ago-5a0631435/?isSelfProfile=true',
+        portfolio: 'https://personal-tvrd.vercel.app/',
+      },
+      'Clem Marcella': {
+        github: 'https://github.com/clemmarcella-IT',
+        linkedin: 'https://www.linkedin.com/in/clem-marcella-1b4236436',
+        portfolio: 'https://clemmarcella-it.github.io/portfolio/',
+      },
+      'Engr. Nonito Molijon Jr.': {
+        github: null,
+        linkedin: 'https://www.linkedin.com/in/nonito-labitoria-molijon-jr-741b71410/',
+        portfolio: null,
+      },
+      'John Paul Terania': {
+        github: 'https://github.com/Jaypi-style',
+        linkedin: 'https://www.linkedin.com/in/jaypi-terania-39a3b13b4/',
+        portfolio: null,
+      },
+    };
+
+    const memberData = memberLinks[memberName];
+
     const links = [
       {
         label: 'GitHub',
-        href: `https://github.com/search?q=${encodeURIComponent(memberName)}&type=users`,
-        ariaLabel: `Search GitHub for ${memberName}`,
+        href: memberData?.github ?? `https://github.com/search?q=${encodeURIComponent(memberName)}&type=users`,
+        ariaLabel: memberData?.github ? `${memberName}'s GitHub profile` : `Search GitHub for ${memberName}`,
         external: true,
       },
       {
         label: 'LinkedIn',
-        href: `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(memberName)}`,
-        ariaLabel: `Search LinkedIn for ${memberName}`,
+        href: memberData?.linkedin ?? `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(memberName)}`,
+        ariaLabel: memberData?.linkedin ? `${memberName}'s LinkedIn profile` : `Search LinkedIn for ${memberName}`,
         external: true,
       },
       {
         label: 'Portfolio',
-        href: '#projects',
-        ariaLabel: 'View the AC project portfolio',
-        external: false,
+        href: memberData?.portfolio ?? '#projects',
+        ariaLabel: memberData?.portfolio ? `${memberName}'s personal portfolio` : 'View the AC project portfolio',
+        external: memberData?.portfolio ? true : false,
       },
     ];
 
