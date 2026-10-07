@@ -10,6 +10,9 @@ export interface CarouselMember {
   role: string;
   image: string;
   description?: string;
+  githubUrl?: string;
+  linkedinUrl?: string;
+  portfolioUrl?: string;
 }
 
 export interface ModernCarouselProps {
@@ -350,10 +353,10 @@ export function ModernCarousel({
             >
               <a
                 className="team-profile-action"
-                href={`https://github.com/search?q=${encodeURIComponent(currentMember.name)}&type=users`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Search GitHub for ${currentMember.name}`}
+                href={currentMember.githubUrl || `https://github.com/search?q=${encodeURIComponent(currentMember.name)}&type=users`}
+                target={currentMember.githubUrl ? '_blank' : undefined}
+                rel={currentMember.githubUrl ? 'noopener noreferrer' : undefined}
+                aria-label={currentMember.githubUrl ? `View ${currentMember.name}'s GitHub profile` : `Search GitHub for ${currentMember.name}`}
                 tabIndex={memberVisible ? 0 : -1}
                 onClick={handleProfileActionClick}
               >
@@ -363,10 +366,10 @@ export function ModernCarousel({
               </a>
               <a
                 className="team-profile-action"
-                href={`https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(currentMember.name)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Search LinkedIn for ${currentMember.name}`}
+                href={currentMember.linkedinUrl || `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(currentMember.name)}`}
+                target={currentMember.linkedinUrl ? '_blank' : undefined}
+                rel={currentMember.linkedinUrl ? 'noopener noreferrer' : undefined}
+                aria-label={currentMember.linkedinUrl ? `View ${currentMember.name}'s LinkedIn profile` : `Search LinkedIn for ${currentMember.name}`}
                 tabIndex={memberVisible ? 0 : -1}
                 onClick={handleProfileActionClick}
               >
@@ -376,8 +379,10 @@ export function ModernCarousel({
               </a>
               <a
                 className="team-profile-action"
-                href="#projects"
-                aria-label="View the AC project portfolio"
+                href={currentMember.portfolioUrl || '#projects'}
+                target={currentMember.portfolioUrl ? '_blank' : undefined}
+                rel={currentMember.portfolioUrl ? 'noopener noreferrer' : undefined}
+                aria-label={currentMember.portfolioUrl ? `View ${currentMember.name}'s portfolio` : 'View the AC project portfolio'}
                 tabIndex={memberVisible ? 0 : -1}
                 onClick={handleProfileActionClick}
               >

@@ -241,6 +241,15 @@ const teamMembers = [
     description: 'Junior Developer specializing in responsive interfaces with React/Vite, Bootstrap, and JavaScript. Focuses on component-based UI, UI/UX implementation, API integration, state management, and cross-browser experiences.',
   },
   {
+    name: 'Ronnel Labata',
+    role: 'Web Developer',
+    image: './images/ronnel.png',
+    description: 'Web developer focused on building clean, user-friendly interfaces and reliable digital experiences with a strong eye for detail and functionality.',
+    githubUrl: 'https://github.com/ronnellabata-sys',
+    linkedinUrl: 'https://www.linkedin.com/in/ronnel-labata-5b82a941b/',
+    portfolioUrl: 'https://ronnellabata-sys.github.io/portfolio/#home',
+  },
+  {
     name: 'Madel YeshaAgo',
     role: 'Quality Assurance',
     image: './images/madel.png',
@@ -491,6 +500,7 @@ function Navbar({ onOpenChat, onOpenBrandSummary }) {
     { label: 'Services', href: '#services' },
     { label: 'Roadmap', href: '#roadmap' },
     { label: 'Team', href: '#team' },
+    { label: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -540,12 +550,13 @@ function Navbar({ onOpenChat, onOpenBrandSummary }) {
 
         {/* Right CTA */}
         <div className="flex items-center gap-3">
-          <a
-            href="#pricing"
+          <button
+            type="button"
+            onClick={onOpenChat}
             className="hidden sm:inline-flex items-center rounded-full bg-white px-4 py-1.5 text-xs font-semibold text-zinc-950 transition-all duration-200 hover:opacity-90 hover:scale-105"
           >
             Get Started
-          </a>
+          </button>
 
           <button
             type="button"
@@ -1642,7 +1653,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="space-y-3">
+          <div id="contact" className="space-y-3">
             <p className="text-xs font-bold uppercase tracking-wider text-white">Contact</p>
             <ul className="space-y-2">
               <li className="flex items-center gap-2">

@@ -27,6 +27,11 @@
     actions.setAttribute('aria-label', `Links for ${memberName}`);
 
     const memberLinks = {
+      'Ronnel Labata': {
+        github: 'https://github.com/ronnellabata-sys',
+        linkedin: 'https://www.linkedin.com/in/ronnel-labata-5b82a941b/',
+        portfolio: 'https://ronnellabata-sys.github.io/portfolio/#home',
+      },
       'Madel YeshaAgo': {
         github: null,
         linkedin: 'https://www.linkedin.com/in/madel-yesha-ago-5a0631435/?isSelfProfile=true',
