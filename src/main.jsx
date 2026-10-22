@@ -500,6 +500,7 @@ function Navbar({ onOpenChat, onOpenBrandSummary }) {
     { label: 'Services', href: '#services' },
     { label: 'Roadmap', href: '#roadmap' },
     { label: 'Team', href: '#team' },
+    { label: 'Reviews', href: '#reviews' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -1322,6 +1323,78 @@ function TeamSection() {
   );
 }
 
+// --- SAMPLE CLIENT REVIEWS ---
+const clientReviews = [
+  {
+    name: 'Jordan Lee',
+    role: 'Small business owner',
+    rating: 5,
+    quote: 'The team turned our ideas into a polished website and kept us in the loop at every step.',
+    avatar: 'mint',
+  },
+  {
+    name: 'Avery Morgan',
+    role: 'Mobile app client',
+    rating: 5,
+    quote: 'Communication was clear, feedback was handled quickly, and the finished app feels easy to use.',
+    avatar: 'blue',
+  },
+  {
+    name: 'Sam Rivera',
+    role: 'Project collaborator',
+    rating: 4,
+    quote: 'A thoughtful team that delivered a useful solution and made the whole process straightforward.',
+    avatar: 'amber',
+  },
+];
+
+function ClientReviewsSection() {
+  return (
+    <section id="reviews" className="client-reviews-section py-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="client-reviews-heading">
+          <p className="text-xs uppercase tracking-widest text-emerald-400 font-semibold mb-2">Client feedback</p>
+          <h2 className="text-3xl sm:text-4xl font-light text-white tracking-tight">Good work, told in their words.</h2>
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-zinc-400">
+            Sample reviews for layout demonstration only. Replace the fictional profiles and comments with verified client feedback, and share photos or contact details only with each client's permission.
+          </p>
+        </div>
+
+        <div className="client-reviews-grid">
+          {clientReviews.map((review) => (
+            <article className="client-review-card" key={review.name}>
+              <div className="client-review-rating" role="img" aria-label={`${review.rating} out of 5 stars`}>
+                <span aria-hidden="true">{'★'.repeat(review.rating)}{'☆'.repeat(5 - review.rating)}</span>
+                <span className="client-review-rating-value">{review.rating}.0 / 5</span>
+              </div>
+              <blockquote className="client-review-quote">“{review.quote}”</blockquote>
+              <div className="client-review-person">
+                <div className={`client-review-avatar client-review-avatar-${review.avatar}`} role="img" aria-label={`Illustrated sample avatar for ${review.name}`}>
+                  <svg viewBox="0 0 80 80" aria-hidden="true">
+                    <circle className="client-review-avatar-background" cx="40" cy="40" r="40" />
+                    <path className="client-review-avatar-body" d="M12 80c2-18 13-27 28-27s26 9 28 27" />
+                    <path className="client-review-avatar-hair" d="M24 35c-4-21 8-29 19-29 14 0 22 11 17 30l-6-7c-7 2-16 1-24-4z" />
+                    <circle className="client-review-avatar-face" cx="40" cy="35" r="15" />
+                    <path className="client-review-avatar-hair" d="M25 32c1-14 8-22 18-22 12 0 19 8 19 21-5-5-9-10-10-14-5 7-15 11-27 15z" />
+                  </svg>
+                </div>
+                <div className="client-review-person-details">
+                  <h3>{review.name}</h3>
+                  <p>{review.role} · Sample profile</p>
+                </div>
+              </div>
+              <div className="client-review-contact" role="group" aria-label={`Sample contact placeholders for ${review.name}`}>
+                <p><span>Phone</span><span>Add client-approved number</span></p>
+                <p><span>Gmail</span><span>Add client-approved Gmail</span></p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // --- TECHNICAL EXPERTISE ---
 function TechnicalExpertiseSection() {
   return (
@@ -2109,6 +2182,7 @@ export default function App() {
         />
         <WorkRoadmap />
         <TeamSection />
+        <ClientReviewsSection />
         <AchievementsSection />
         <FaqSection />
         <PromoBanner

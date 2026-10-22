@@ -39,19 +39,21 @@ export function BackgroundBoxes({ className }: BackgroundBoxesProps) {
   useEffect(() => {
     const grid = gridRef.current;
     let activeTile: HTMLDivElement | null = null;
+    let pointerX = 0;
+    let pointerY = 0;
+    let animationFrame = 0;
     const tiles = grid ? Array.from(grid.children) as HTMLDivElement[] : [];
     const tileCenters = tiles.map((tile) => {
       const rect = tile.getBoundingClientRect();
       return { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
     });
 
-    const handlePointerMove = (event: PointerEvent) => {
-      if (event.pointerType === 'touch') return;
-
+    const updateActiveTile = () => {
+      animationFrame = 0;
       let nearestIndex = -1;
       let nearestDistance = Infinity;
       tileCenters.forEach((center, index) => {
-        const distance = (center.x - event.clientX) ** 2 + (center.y - event.clientY) ** 2;
+        const distance = (center.x - pointerX) ** 2 + (center.y - pointerY) ** 2;
         if (distance < nearestDistance) {
           nearestIndex = index;
           nearestDistance = distance;
@@ -69,7 +71,19 @@ export function BackgroundBoxes({ className }: BackgroundBoxesProps) {
       activeTile.classList.add('is-active');
     };
 
+    const handlePointerMove = (event: PointerEvent) => {
+      if (event.pointerType === 'touch') return;
+
+      pointerX = event.clientX;
+      pointerY = event.clientY;
+      if (!animationFrame) animationFrame = window.requestAnimationFrame(updateActiveTile);
+    };
+
     const clearActiveTile = () => {
+      if (animationFrame) {
+        window.cancelAnimationFrame(animationFrame);
+        animationFrame = 0;
+      }
       activeTile?.classList.remove('is-active');
       activeTile = null;
     };
@@ -77,10 +91,11 @@ export function BackgroundBoxes({ className }: BackgroundBoxesProps) {
     window.addEventListener('pointermove', handlePointerMove, { passive: true });
     window.addEventListener('pointerleave', clearActiveTile, { passive: true });
     return () => {
+      if (animationFrame) window.cancelAnimationFrame(animationFrame);
       window.removeEventListener('pointermove', handlePointerMove);
       window.removeEventListener('pointerleave', clearActiveTile);
     };
-  }, [dimensions.columns]);
+  }, [dimensions.columns, dimensions.rows]);
 
   const tileCount = dimensions.columns * dimensions.rows;
 
